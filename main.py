@@ -2432,8 +2432,13 @@ class ReportGenerator:
                 batch_header = f"**[第 {i}/{len(batches)} 批次]**\n\n"
                 batch_content = batch_header + batch_content
 
-            payload = {"msgtype": "markdown", "markdown": {"content": batch_content}}
-
+            #payload = {"msgtype": "markdown", "markdown": {"content": batch_content}}
+            payload = {
+                "msgtype": "text",
+                "text": {
+                    "content": batch_content
+                }
+            }
             try:
                 response = requests.post(
                     webhook_url,
