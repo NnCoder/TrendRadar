@@ -16,9 +16,14 @@ HarmonyOS
 
 后端开发
 Java
+Go
 
-地狱潜兵
+游戏
+Steam
+
+PS5
 NS
+Switch
 
 京东
 刘强东
